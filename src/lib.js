@@ -3,7 +3,7 @@ import YAML from 'js-yaml';
 export function yamlParse(yamlStr) {
   let result = null;
   try {
-    result = YAML.safeLoad(yamlStr);
+    result = YAML.load(yamlStr);
     console.log('yaml obj', result);
   } catch (err) {
     console.error('yamlParse error', err);

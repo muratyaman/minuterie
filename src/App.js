@@ -71,9 +71,6 @@ class App extends React.Component {
           {status === STATUS_EDITING ? this.renderForm() : null}
         </main>
 
-        <footer>
-          &copy; 2020
-        </footer>
       </div>
     );
   }
